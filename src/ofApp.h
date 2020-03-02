@@ -2,6 +2,19 @@
 
 #include "ofMain.h"
 
+class audioManager{
+public:
+    audioManager();
+    ~audioManager();
+    
+    void loadCountrySoundBank(string countryName);
+    
+    vector<ofSoundPlayer> bass,drums,lead;
+    
+    string countryName;
+};
+
+
 class country {
     
 public:
@@ -13,6 +26,8 @@ public:
     ofVec3f point;
     country();
     ~country();
+    
+    audioManager countryAudioManager;
     
 };
 
