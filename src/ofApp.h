@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 
+
 class country {
     
 public:
@@ -11,8 +12,12 @@ public:
     float time;
     int radius,r,g,b;
     ofVec3f point;
-    country();
+    country(string nameOfCountry);
     ~country();
+    string name;
+    //audioManager countryAudioManager;
+    vector<ofSoundPlayer> v_bass, v_drum, v_lead;
+    ofImage flag;
     
 };
 
@@ -29,7 +34,10 @@ class ofApp : public ofBaseApp{
     ofVec3f centre;
     float dist;
     int countrySize;
+    vector<string> countryNames;
+    string countryName;
     ofSoundPlayer noise;
-    vector<ofSoundPlayer> soundVector;
+    vector<ofSoundPlayer> soundVectorBass,soundVectorDrum,SoundVectorLead;
     vector<bool> play;
+    ofImage britFlag;
 };
