@@ -30,7 +30,11 @@ void ofApp::setup(){
         soundVector[k].setLoop(true);
         soundVector[k].setVolume(0.6);
         play.push_back(false);
+
+		
     }
+
+	
     
 }
 

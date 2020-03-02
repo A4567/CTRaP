@@ -2,6 +2,8 @@
 
 #include "ofMain.h"
 
+
+
 class country {
     
 public:
@@ -32,4 +34,6 @@ class ofApp : public ofBaseApp{
     ofSoundPlayer noise;
     vector<ofSoundPlayer> soundVector;
     vector<bool> play;
+
+
 };
